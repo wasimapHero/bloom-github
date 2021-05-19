@@ -17,7 +17,7 @@
     margin-bottom: 50px;
 }
 .cont-caro{
-    margin-left: 320px;
+    margin-left: 300px;
     margin-top: 20px;
     margin-bottom: 150px;
     padding-bottom: 0px;
@@ -45,7 +45,7 @@
     justify-content: center;
 }
 .container.cont-table{
-    margin-left: 380px;
+    margin-left: 330px;
     margin-top: 0px;
 }
 .text-row{
@@ -93,5 +93,5 @@
     padding: 10px;
 }
 #pink-line{
-    background-color: rgb(216, 41, 143); width: 1388px; height: 30px; margin-left: 329px; border-radius: 4px;
+    background-color: rgb(216, 41, 143); width: 1388px; height: 30px; margin-left: 278px; border-radius: 4px;
 }

@@ -78,7 +78,8 @@ document.getElementById('btn-minus').addEventListener('click', () => {
 });
 
 //proceed btn
-document.getElementById('proceed').addEventListener('click', () => {
+document.getElementById('proceed').addEventListener('click', (e) => {
+    e.preventDefault();
     document.getElementById('abc').style.display = 'none';
     document.getElementById('cart-list').style.display = 'none';
     document.getElementById('foundation-part').style.display = 'none';
