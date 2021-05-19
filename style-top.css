@@ -44,7 +44,8 @@
     font-size: 17px;
     padding: 10px 20px;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 1000px) {
+    
 .navbar .nav-item .dropdown-menu
 { display: none; }
 .navbar .nav-item:hover .nav-link
@@ -71,8 +72,12 @@ justify-content: center;
 }
 .navbar .nav-item:hover #blogs-img{
 height: 150px;
-width: 250px;}	
+width: 250px;
+}	
 }
+
+
+
 .container-right-top{
 position: absolute;
 left: 1500px;

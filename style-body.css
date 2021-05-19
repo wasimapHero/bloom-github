@@ -92,3 +92,6 @@
     box-shadow: 10px 10px 40px gray;
     padding: 10px;
 }
+#pink-line{
+    background-color: rgb(216, 41, 143); width: 1388px; height: 30px; margin-left: 329px; border-radius: 4px;
+}

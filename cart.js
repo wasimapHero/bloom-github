@@ -22,16 +22,16 @@ document.getElementById('btn-plus').addEventListener('click', () => {
     let d = document.getElementById('tax-vat').innerHTML;
     d = parseFloat(d);
     if (d >= 0) {
-        d = d + 55.40;
+        d = d + 55.00;
     }
     document.getElementById('tax-vat').innerText = d;
     let e = document.getElementById('total-price').innerHTML;
     e = parseFloat(e);
     if (e > 0) {
-        e = e + 554.40;
+        e = e + 554.00;
     }
     if (e == 0) {
-        e = 554.40;
+        e = 554.00;
     }
     document.getElementById('total-price').innerText = e;
 })
@@ -47,31 +47,31 @@ document.getElementById('btn-minus').addEventListener('click', () => {
     document.getElementById('item-no').innerText = a;
     let b = document.getElementById('product-price').innerHTML;
     b = parseFloat(b);
-    if (b > 0) {
+    if (b > 1) {
         b = b - 490.00;
     }
 
     document.getElementById('product-price').innerText = b;
     let c = document.getElementById('shipping-cost').innerHTML;
     c = parseFloat(c);
-    if (c > 0) {
+    if (c > 1) {
         c = c - 9.00;
     }
 
     document.getElementById('shipping-cost').innerText = c;
     let d = document.getElementById('tax-vat').innerHTML;
     d = parseFloat(d);
-    if (d > 0) {
-        d = d - 55.40;
+    if (d > 1) {
+        d = d - 55.00;
     }
 
     document.getElementById('tax-vat').innerText = d;
     let e = document.getElementById('total-price').innerHTML;
     e = parseFloat(e);
-    if (e > 0 || e == 1) {
-        e = e - 554.40;
+    if (e > 1) {
+        e = e - 554.00;
     }
-    if (e == 0) {
+    if (e == 0 || e == 1) {
         e = 0;
     }
     document.getElementById('total-price').innerText = e;
@@ -154,7 +154,6 @@ function passPasswordToLogin(passText) {
     console.log(passText);
     document.getElementById('login-btn').addEventListener('click', e => {
         e.preventDefault();
-        var a = 1;
 
         const name2 = document.getElementById('name2').value;
         const password2 = document.getElementById('password2').value;
@@ -164,7 +163,7 @@ function passPasswordToLogin(passText) {
             alert('Please fill out all gaps');
         }
         else {
-            if (password2.length < 9 || password2.length > 15) {
+            if (password2.length > 8 || password2.length < 15) {
                 alert('Password must be in between 9 and 15 characters');
             }
             if (password2 != passText) {

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl-foundation-pro-matte-glm677-soft-honey-600.jpg</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<style>
+    h2 {
+        margin-top: 150px;
+    }
+
+    .select {
+        height: 35px;
+        margin-top: 5px;
+    }
+
+    #description {
+        height: 160px;
+        background-color: rgb(245, 225, 225);
+        padding: 20px;
+        width: 700px;
+    }
+
+    .img {
+        height: 400px;
+    }
+
+    .abc {
+        margin: 20px 40px;
+    }
+
+    body p {
+        font-family: arial;
+        color: mediumvioletred;
+
+    }
+
+    body span {
+        color: black;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    #form {
+        display: none;
+    }
+
+    #cart-list {
+        margin-left: 450px;
+        padding: 10px;
+    }
+
+    #proceed:hover {
+        box-shadow: 5px 5px 20px rgb(221, 99, 170);
+    }
+
+    #cart-list {
+        position: relative;
+
+    }
+</style>
+
+<body>
+    <div class="container d-flex flex-row justify-content-around" style="margin-left: 300px;">
+
+        <div id="foundation-part" class="col-6" style="margin-top: 5px;">
+            <img src="images/makeup/foundation.jpg" alt="" style="height: 500px;">
+        </div>
+        <div id="foundation-part-2" class="col-6">
+            <h2>L.A. Girl PRO Matte Foundation – GLM677 Soft Honey
+                (30ml)</h2>
+            <h4 style="margin-bottom:30px">৳ 490.00</h4>
+            <p id="description">With a soft and suede-like finish, PRO.matte Foundation will have you covered and
+                shine-free all day.
+                Creamy, liquid formula provides smooth and build-able coverage for both day and night time wear.
+                Minimize
+                the appearance of pores and fine lines for an even, soft focus effect. Paraben free formula with
+                added
+                vitamin E, B5 & sunflower oil.</p>
+        </div>
+
+    </div>
+    <div id="cart-list">
+        <button class="btn btn-secondary" style="margin-left: 40px; width: 200px; font-size: 18px;">Quantity</button>
+
+
+        <button id="btn-minus" class="btn" style="margin-left: 30px;border: 1px solid gray; height: 50px; width: 50px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg"
+                viewBox="0 0 16 16">
+                <path d="M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z" />
+            </svg>
+        </button>
+
+        <span id="input-value" class="btn border border-secondary" style="margin-left: 5px;">1</span>
+        <button id="btn-plus" class="btn" style="border: 1px solid gray; height: 50px; width: 50px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg"
+                viewBox="0 0 16 16">
+                <path d="M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z" />
+            </svg>
+        </button>
+
+        <div class="abc" id="abc">
+            <h1>Order Summary</h1>
+            <p style="font-size: 21px;">Items Ordered: &nbsp; <span id="item-no">1</span></p>
+            <p style="font-size: 20px;">Product Price: &nbsp;৳ &nbsp;<span id="product-price">490.00</span></p>
+            <p style="font-size: 19px;">Shipping Cost: &nbsp;৳ &nbsp;<span id="shipping-cost">9.00</span></p>
+            <p style="font-size: 19px;">Tax+Vat: &nbsp;৳ &nbsp;<span id="tax-vat">55.0</span></p>
+            <p style="font-size: 30px; font-weight: 500;">Total Price: &nbsp;৳ <span id="total-price">554.0</span>
+            </p>
+            <button id="proceed" class="btn"
+                style="margin-left: 250px; width: 300px; height: 40px; background-color: rgb(192, 20, 100); color: white;">Proceed</button>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------ -->
+    <div id="form">
+
+        <div id="body" class="body">
+        </div>
+        <h1 id="password-text" style="color: white; opacity: 0%;"></h1>
+        <div class="box">
+            <div class="content">
+                <!-- <form action=""> -->
+                <div id="create-Account" class="content1">
+                    <h1>Create Account</h1>
+                    <br>
+                    <input id="username" type="text" name="name" placeholder="Username"><br><br>
+                    <input id="name" type="text" name="name" placeholder="Name"><br><br>
+                    <input id="password" type="password" name="password" placeholder="Password"><br><br>
+                    <input id="confirm-password" type="password" name="password-confirm"
+                        placeholder="Confirm Password"><br><br>
+                    <button id="continue-btn" class="btn btn-secondary" type="submit">Continue</button>
+                    <br><br>
+                    <a href="#">
+                        <p id="sign-in-opt">Already have an account?Login/Sign in</p>
+                    </a>
+                </div>
+                <div id="create-success">
+                    <p class="text-primary">You have successfully created an account!</p>
+                    <button id="btn-create-success">Now, Login to buy products</button>
+                </div>
+                <div id="content-2" class="content2">
+                    <h1>Login</h1>
+                    <br>
+                    <input id="name2" type="text" name="name" placeholder="Name"><br><br>
+                    <input id="password2" type="password" name="password" placeholder="Password"><br><br>
+                    <button id="login-btn" class="btn btn-secondary" type="submit">Login/Sign in</button>
+                </div>
+                <div id="confirm-login">
+                    <p class="text-primary">You have successfully Logged in!</p>
+                    <a href="index.html"><button style="background-color: rgb(189, 40, 102);" class="btn" type="submit">
+                            Visit Our
+                            Homepage to Buy -></button></a>
+                </div>
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="D:\bloom-github/eyeshadow.js"></script>
+</body>
+
+</html>

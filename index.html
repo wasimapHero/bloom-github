@@ -16,180 +16,275 @@
   <link rel="stylesheet" href="style-top.css">
   <link rel="stylesheet" href="style-body.css">
   <style>
+    .body {
+      background-image: url("images/website-bloom-bg-pic-1900x2950.jpg");
+    }
 
+    /* min-width: @screen-sm-min */
+    @media all and (max-width: 1000px) {
 
+      .navbar .nav-link .dropdown-menu {
+        display: none;
+      }
+
+      .navbar .nav-item:hover .dropdown-menu {
+        display: none;
+      }
+
+      .body {
+        background-image: unset;
+        background-color: rgb(246, 68, 137);
+        width: 1000px;
+        margin: 0;
+        padding: 0;
+      }
+
+      #nav-2 {
+        display: flex;
+        justify-content: start;
+        width: 450px;
+        font-size: 10px;
+        border-top: 0px;
+      }
+
+      .top-section {
+
+        /* width: 992px; */
+        margin: 0 200px 0 0;
+        padding: 0;
+      }
+
+      .container .cont-caro {
+        width: 900px;
+        padding-top: 200px;
+      }
+
+      #search-div input {
+        display: none;
+      }
+
+      #search-div .search-btn {
+        position: absolute;
+        left: 650px;
+        top: 50px;
+      }
+
+      #grid {
+        margin: 60px;
+        width: 150px;
+        height: 150px;
+      }
+
+      #grid img:hover .col-4 .grid {
+        margin: 60px;
+        width: 150px;
+        height: 150px;
+      }
+
+      #grid img {
+        width: 100px;
+        height: 100px;
+      }
+
+      #grid .text-row {
+        display: none;
+      }
+
+      #grid .box-row {
+        display: none;
+      }
+
+      .container-right-top {
+        position: absolute;
+        left: 800px;
+        top: 100px;
+        width: 30px;
+      }
+
+      #pink-line {
+        width: 600px;
+        height: 30px;
+      }
+
+      .spotlight h1 {
+        width: 600px;
+      }
+
+    }
   </style>
 </head>
 
 <body>
   <!-- ------------------------ Navbar 1 -------------------------------- -->
+  <div class="body">
+    <div class="container fixed top-section">
+      <div class="nav-1-container">
+        <nav class="navbar navbar-expand-lg navbar-light" id="nav-1-container">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="Design plan/logo-resize-01.svg" class="img-logo" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-1">
+                <li class="nav-item nav-1-items">
+                  <a class="nav-link active" id="nav-1-li" aria-current="page"
+                    href="D:\bloom-github\new-all-pages\top-section-pages/categories.html">Categories</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="nav-1-li" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">Brands
+                  </a>
 
-  <div class="container fixed top-section">
-    <div class="nav-1-container">
-      <nav class="navbar navbar-expand-lg navbar-light" id="nav-1-container">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="Design plan/logo-resize-01.svg" class="img-logo" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-1">
-              <li class="nav-item nav-1-items">
-                <a class="nav-link active" id="nav-1-li" aria-current="page" href="#">Categories</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="nav-1-li" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">Brands
-                </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="color-pop.html">
+                        <img id="blogs-img" src="images/top section-navbar/colourpop-01.jpg" class="card-img-top"
+                          alt="...">
+                        <div id="card-body-cus">
+                          <span class="card-title-cus">ClourPop</span>
+                        </div>
+                      </a></li>
 
-                  <li><a class="dropdown-item" href="#">
-                      <img id="blogs-img" src="images/top section-navbar/colourpop-01.jpg" class="card-img-top"
-                        alt="...">
-                      <div id="card-body-cus">
-                        <span class="card-title-cus">ClourPop</span>
-                      </div>
-                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <img id="blogs-img" src="images/top section-navbar/flormar.jpg" class="card-img-top" alt="...">
+                        <div id="card-body-cus">
+                          <span class="card-title-cus">Flormar</span>
+                        </div>
+                      </a></li>
 
-                  <li><a class="dropdown-item" href="#">
-                      <img id="blogs-img" src="images/top section-navbar/flormar.jpg" class="card-img-top" alt="...">
-                      <div id="card-body-cus">
-                        <span class="card-title-cus">Flormar</span>
-                      </div>
-                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <img id="blogs-img" src="images/top section-navbar/revlon-cropped.png" class="card-img-top"
+                          alt="...">
+                        <div id="card-body-cus">
+                          <span class="card-title-cus">Revlon</span>
+                        </div>
+                      </a></li>
 
-                  <li><a class="dropdown-item" href="#">
-                      <img id="blogs-img" src="images/top section-navbar/revlon-cropped.png" class="card-img-top"
-                        alt="...">
-                      <div id="card-body-cus">
-                        <span class="card-title-cus">Revlon</span>
-                      </div>
-                    </a></li>
+                  </ul>
+                </li>
+                <!-- ------------------------------ -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="nav-1-li" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Beauty Blogs
+                  </a>
 
-                </ul>
-              </li>
-              <!-- ------------------------------ -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="nav-1-li" href="#" id="navbarDropdown" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  Beauty Blogs
-                </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="frizzy-hair.html">
+                        <!-- ---------- -->
 
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">
-                      <!-- ---------- -->
+                        <img id="blogs-img" src="images/top section-navbar/frizz_hair.jpeg" class="card-img-top"
+                          alt="...">
+                        <div id="card-body-cus">
+                          <span class="card-title-cus">ফ্রিজী চুলের সমস্যা?</span>
+                        </div>
 
-                      <img id="blogs-img" src="images/top section-navbar/frizz_hair.jpeg" class="card-img-top"
-                        alt="...">
-                      <div id="card-body-cus">
-                        <span class="card-title-cus">ফ্রিজী চুলের সমস্যা?</span>
-                      </div>
-
-                    </a></li>
-                  <li><a class="dropdown-item" href="#">
-                      <img id="blogs-img" src="images/top section-navbar/Moisturization-for-a-Healthy-Skin.jpg"
-                        class="card-img-top" alt="...">
-                      <div id="card-body-cus">
-                        <span class="card-title-cus">হাইড্রেশন এবং ময়েশ্চারাইজেশন</span>
-                      </div>
-                    </a></li>
-                  <li><a class="dropdown-item" href="#">
-                      <img id="blogs-img" src="images/top section-navbar/eyeliner.png" class="card-img-top" alt="...">
-                      <div id="card-body-cus">
-                        <span class="card-title-cus">আইলাইনারের রকমভেদ ও ব্যবহার</span>
-                      </div>
-                    </a></li>
+                      </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <img id="blogs-img" src="images/top section-navbar/Moisturization-for-a-Healthy-Skin.jpg"
+                          class="card-img-top" alt="...">
+                        <div id="card-body-cus">
+                          <span class="card-title-cus">হাইড্রেশন এবং ময়েশ্চারাইজেশন</span>
+                        </div>
+                      </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        <img id="blogs-img" src="images/top section-navbar/eyeliner.png" class="card-img-top" alt="...">
+                        <div id="card-body-cus">
+                          <span class="card-title-cus">আইলাইনারের রকমভেদ ও ব্যবহার</span>
+                        </div>
+                      </a></li>
+            </div>
+            </ul>
           </div>
+          </li>
+          </ul>
+          <form class="d-flex" id="search-div">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn search-btn" type="submit"><img class="search-icon" src="Design plan/search.png"
+                alt=""></button>
+          </form>
+
+        </nav>
+      </div>
+
+      <!-- --------------------    Navbar 2   ------------------------------------- -->
+      <div class="d-flex justify-content-lg-around justify-content-sm-start" id="nav-2">
+        <div class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle makeup" href="#" id="navbarScrollingDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Makeup</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="foundation-page.html">Foundation</a></li>
+            <li><a class="dropdown-item" href="primer.html">Primer</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="kajal.html">Kajal</a></li>
+            <li><a class="dropdown-item" href="eyeshadow.html">Eyeshaow</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Eyeliner</a></li>
+            <li><a class="dropdown-item" href="#">Highlighter</a></li>
           </ul>
         </div>
-        </li>
-        </ul>
-        <form class="d-flex" id="search-div">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn search-btn" type="submit"><img class="search-icon" src="Design plan/search.png"
-              alt=""></button>
-        </form>
-
-      </nav>
+        <div class="p-4 dropdown">
+          <a class="nav-link dropdown-toggle nav-2-items" href="#" id="navbarScrollingDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">Personal Care</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="soaps.html">Soaps</a></li>
+            <li><a class="dropdown-item" href="#">Lotion</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Face-wash</a></li>
+            <li><a class="dropdown-item" href="#">Moisturizer</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Face-wipe</a></li>
+            <li><a class="dropdown-item" href="#">Hair Oil</a></li>
+          </ul>
+        </div>
+        <div class="p-4"><a href="organic-packs.html">Organic Product</a></div>
+        <div class="p-4"><a href="korean-beauty.html">K-Beauty</a></div>
+        <div class="p-4"><a class="nav-link dropdown-toggle nav-2-items" href="tools-and-accessories.html"
+            id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tool &
+            Accessories</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="travel-makeup-bag.html">Travel Makeup Bag</a></li>
+            <li><a class="dropdown-item" href="tools-and-accessories.html">Hair Straightner</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="tools-and-accessories.html">Hair Dryer</a></li>
+            <li><a class="dropdown-item" href="#">Sanitary Napkin</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Mirror</a></li>
+            <li><a class="dropdown-item" href="#">Brush Set</a></li>
+            <li><a class="dropdown-item" href="#">Eyelash Curler</a></li>
+            <li><a class="dropdown-item" href="#">Sponges</a></li>
+          </ul>
+        </div>
+        <div class="p-4"><a href="fragrance.html">Fragrance</a></div>
+      </div>
+      <!-- Navbar 2 sesh -->
     </div>
 
-    <!-- --------------------    Navbar 2   ------------------------------------- -->
-    <div class="d-flex justify-content-lg-around justify-content-sm-start" id="nav-2">
-      <div class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle makeup" href="#" id="navbarScrollingDropdown" role="button"
-          data-bs-toggle="dropdown" aria-expanded="false">
-          Makeup</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-          <li><a class="dropdown-item" href="foundation-page.html">Foundation</a></li>
-          <li><a class="dropdown-item" href="#">Primer</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Kajal</a></li>
-          <li><a class="dropdown-item" href="#">Eyeshaow</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Eyeliner</a></li>
-          <li><a class="dropdown-item" href="#">Highlighter</a></li>
-        </ul>
-      </div>
-      <div class="p-4 dropdown">
-        <a class="nav-link dropdown-toggle nav-2-items" href="#" id="navbarScrollingDropdown" role="button"
-          data-bs-toggle="dropdown" aria-expanded="false">Personal Care</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-          <li><a class="dropdown-item" href="#">Soaps</a></li>
-          <li><a class="dropdown-item" href="#">Lotion</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Face-wash</a></li>
-          <li><a class="dropdown-item" href="#">Moisturizer</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Face-wipe</a></li>
-          <li><a class="dropdown-item" href="#">Hair Oil</a></li>
-        </ul>
-      </div>
-      <div class="p-4"><a href="#">Organic Product</a></div>
-      <div class="p-4"><a href="#">K-Beauty</a></div>
-      <div class="p-4"><a class="nav-link dropdown-toggle nav-2-items" href="#" id="navbarScrollingDropdown"
-          role="button" data-bs-toggle="dropdown" aria-expanded="false">Tool & Accessories</a>
-        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-          <li><a class="dropdown-item" href="foundation-page.html">Travel Makeup Bag</a></li>
-          <li><a class="dropdown-item" href="#">Hair Straightner</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Hair Dryer</a></li>
-          <li><a class="dropdown-item" href="#">Sanitary Napkin</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Mirror</a></li>
-          <li><a class="dropdown-item" href="#">Brush Set</a></li>
-          <li><a class="dropdown-item" href="#">Eyelash Curler</a></li>
-          <li><a class="dropdown-item" href="#">Sponges</a></li>
-        </ul>
-      </div>
-      <div class="p-4"><a href="#">Fragrance</a></div>
+    <!-- =========================== -->
+
+    <div class="container-right-top">
+      <div class="login"><a href="login.html">Login</a></div>
+      <div class="cart-sign" title="Cart"><a href="cart.html"><img class="cart-img"
+            src="images/top section-navbar/cart-2.webp" alt=""></a></div>
     </div>
-    <!-- Navbar 2 sesh -->
-  </div>
-
-  <!-- =========================== -->
-
-  <div class="container-right-top">
-    <div class="login"><a href="login.html">Login</a></div>
-    <div class="cart-sign" title="Cart"><a href="cart.html"><img class="cart-img"
-          src="images/top section-navbar/cart-2.webp" alt=""></a></div>
-  </div>
   </div>
 
 
@@ -208,34 +303,35 @@
             aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="images/carousel/pic 1.jpg" class="d-block w-100 img-fluid size" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-carousel">Makeup kits</h5>
-              <p class="text-2-carousel">Get every item you need to beautify yourself</p>
-            </div>
+          <div class="carousel-item active" data-bs-interval="3000"><a href="foundation-page.html">
+              <img src="images/carousel/pic 1.jpg" class="d-block w-100 img-fluid size" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-carousel">Makeup kits</h5>
+                <p class="text-2-carousel">Get every item you need to beautify yourself</p>
+              </div>
+            </a>
           </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="images/carousel/DIYcropped640x328.jpg" class="d-block w-100 img-fluid size" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-carousel">Beauty Blogs</h5>
-              <p class="text-2-carousel">Get beauty tips and stay healthy</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="images/carousel/powder1cropped640x328.jpg" class="d-block w-100 img-fluid size" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5 class="text-carousel">Organic products</h5>
-              <p class="text-2-carousel">Get all types of organic products from the most reliable brands</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="images/carousel/powder2cropped640x328.jpg" class="d-block w-100 img-fluid size" alt="...">
-            <div class="carousel-caption d-none d-md-block caption-caro">
-              <h5 class="text-carousel">Make your own pack</h5>
-              <p class="text-2-carousel">Take care of your daily routine</p>
-            </div>
-          </div>
+          <div class="carousel-item" data-bs-interval="4000"><a href="frizzy-hair.html">
+              <img src="images/carousel/DIYcropped640x328.jpg" class="d-block w-100 img-fluid size" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-carousel">Beauty Blogs</h5>
+                <p class="text-2-carousel">Get beauty tips and stay healthy</p>
+              </div>
+          </div></a>
+          <div class="carousel-item" data-bs-interval="4000"><a href="organic-packs.html">
+              <img src="images/carousel/powder1cropped640x328.jpg" class="d-block w-100 img-fluid size" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-carousel">Organic products</h5>
+                <p class="text-2-carousel">Get all types of organic products from the most reliable brands</p>
+              </div>
+          </div></a>
+          <div class="carousel-item" data-bs-interval="5000"><a href="organic-packs.html">
+              <img src="images/carousel/powder2cropped640x328.jpg" class="d-block w-100 img-fluid size" alt="...">
+              <div class="carousel-caption d-none d-md-block caption-caro">
+                <h5 class="text-carousel">Make your own pack</h5>
+                <p class="text-2-carousel">Take care of your daily routine</p>
+              </div>
+          </div></a>
         </div>
 
 
@@ -255,15 +351,14 @@
   <!-- =========================== -->
 
   <!-- carousel sesh -->
-  <div
-    style="background-color: rgb(216, 41, 143); width: 1500px; height: 30px; margin-left: 230px; border-radius: 4px;">
+  <div id="pink-line">
   </div>
 
 
   <div class="container cont-table">
     <div class="container table-row">
 
-      <div class="col-4"><a href="#">
+      <div id="grid" class="col-4 grid"><a href="primer.html">
           <img src="images/makeup/makeup-cosmetics.jpg" alt="">
           <div class="text-row"><span>Makeup</span></div>
           <div class="box-row"><span>Play with Colors, Color your own life</span></div>
@@ -272,7 +367,7 @@
 
 
 
-      <div class="col-4"><a href="#"><img src="images/makeup/beauty blog1.jpg" alt="">
+      <div id="grid" class="col-4 grid"><a href="frizzy-hair.html"><img src="images/makeup/beauty blog1.jpg" alt="">
           <div class="text-row"><span>Beauty Blogs</span></div>
           <div class="box-row"><span>Since makeup is Art, be your own Artist!</span></div>
         </a>
@@ -280,7 +375,7 @@
 
 
 
-      <div class="col-4"><a href="#"><img src="images/makeup/fragnance.webp" alt="">
+      <div id="grid" class="col-4 grid"><a href="fragrance.html"><img src="images/makeup/fragnance.webp" alt="">
           <div class="text-row"><span>Fragrance</span></div>
           <div class="box-row"><span>Let the scents mesmerize your senses</span></div>
       </div>
@@ -289,7 +384,7 @@
 
     <div class="container table-row">
 
-      <div class="col-4"><a href="#">
+      <div id="grid" class="col-4 grid"><a href="skin-care.html">
           <img src="images/makeup/Body-Care.jpg" alt="">
           <div class="text-row"><span>Skin Care</span></div>
           <div class="box-row"><span>Glowing Skin is a commitment, not Miracle</span></div>
@@ -298,7 +393,7 @@
 
 
 
-      <div class="col-4"><a href="#">
+      <div id="grid" class="col-4 grid"><a href="hair-care.html">
           <img src="images/makeup/hair care.jpg" alt="">
           <div class="text-row"><span>Hair Care</span></div>
           <div class="box-row"><span>Glowing Skin is a commitment, not Miracle</span></div>
@@ -307,7 +402,8 @@
 
 
 
-      <div class="col-4"><a href="#"><img src="images/makeup/k-beauty cropped.jpg" alt="">
+      <div id="grid" class="col-4 grid"><a href="korean-beauty.html"><img src="images/makeup/k-beauty cropped.jpg"
+            alt="">
           <div class="text-row"><span>K-beauty</span></div>
           <div class="box-row"><span>Beauty essentials All the way from Korea</span></div>
       </div>
@@ -317,7 +413,7 @@
 
     <div class="container table-row">
 
-      <div class="col-4"><a href="#">
+      <div id="grid" class="col-4 grid"><a href="organic-packs.html">
           <img src="images/makeup/organic 5.jpg" alt="">
           <div class="text-row"><span>Organic packs</span></div>
           <div class="box-row"><span>Let your face receive the best treat from nature</span></div>
@@ -325,13 +421,13 @@
       </div>
 
 
-      <div class="col-4"><a href="#"><img src="images/makeup/face mask.jpg" alt="">
+      <div id="grid" class="col-4 grid"><a href="face-mask.html"><img src="images/makeup/face mask.jpg" alt="">
           <div class="text-row"><span>Face Masks</span></div>
           <div class="box-row"><span>Let your face receive the best treat from nature</span></div>
         </a>
       </div>
 
-      <div class="col-4"><a href="#"><img src="images/makeup/tool.png" alt="">
+      <div id="grid" class="col-4 grid"><a href="tools-and-accessories.html"><img src="images/makeup/tool.png" alt="">
           <div class="text-row"><span>Tool & Accessories</span></div>
           <div class="box-row"><span>Beauty essentials All the way from Korea</span></div>
         </a>
@@ -341,25 +437,31 @@
 
 
   <div class="spotlight container cont-table">
-    <h1>In The Spotlight</h1>
+    <div>
+      <h1>In The Spotlight</h1>
+    </div>
     <div class="container table-row">
-      <div class="col-4">
-        <a href="#"><img src="images/makeup/spotlight/hair.jpg" alt=""></a>
+      <div id="grid" class="col-4 grid">
+        <a href="frizzy-hair.html"><img src="images/makeup/spotlight/hair.jpg" alt=""></a>
       </div>
 
-      <div class="col-4"><a href="#"><img src="images/makeup/spotlight/lip.jpg" alt=""></a>
+      <div id="grid" class="col-4 grid"><a href="primer.html"><img src="images/makeup/spotlight/lip.jpg" alt=""></a>
       </div>
 
-      <div class="col-4"><a href="#"><img src="images/makeup/spotlight/skin.jpg" alt=""></a>
+      <div id="grid" class="col-4 grid"><a href="organic-packs.html"><img src="images/makeup/spotlight/skin.jpg"
+            alt=""></a>
       </div>
     </div>
   </div>
   </div>
-
-  <footer style="margin-bottom: 0px; margin-top: 200px;">
+  </div>
+  <footer class="footer"
+    style="margin-bottom: 0px; margin-top: 200px; padding: 30px; background-color: rgb(255, 153, 135);">
+    <h1>Contact Us</h1>
+    email: xxxxx@gmail.com
+    Hot-line: 01XXXXXXXXX
     <p class="footer">© Bloom-copyrights-2021</p>
   </footer>
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
