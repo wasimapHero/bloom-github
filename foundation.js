@@ -87,6 +87,19 @@ document.getElementById('proceed').addEventListener('click', (e) => {
     document.getElementById('form').style.display = 'inline-block';
 
 });
+document.getElementById('order-confirm-msg').addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('abc').style.display = 'none';
+    document.getElementById('cart-list').style.display = 'none';
+    document.getElementById('foundation-part').style.display = 'none';
+    document.getElementById('foundation-part-2').style.display = 'none';
+    document.getElementById('create-Account').style.display = 'none';
+    document.getElementById('content-2').style.display = 'none';
+    document.getElementById('create-success').style.display = 'none';
+    document.getElementById('confirm-login').style.display = 'none';
+    document.getElementById('confirm-msg').style.display = 'inline-block';
+
+})
 
 
 //login js part
@@ -166,8 +179,8 @@ function passPasswordToLogin(passText) {
             alert('Please fill out all gaps');
         }
         else {
-            if (password2.length > 8 || password2.length < 15) {
-                alert('Password must be in between 9 and 15 characters');
+            if (password2.length < 8 || password2.length > 15) {
+                alert('Password must be in between 8 and 15 characters');
             }
             if (password2 != passText) {
                 alert('Wrong Password! Please fill up again');

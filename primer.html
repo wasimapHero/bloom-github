@@ -67,6 +67,10 @@
         position: relative;
 
     }
+
+    #confirm-msg {
+        display: none;
+    }
 </style>
 
 <body>
@@ -117,7 +121,7 @@
             <p style="font-size: 30px; font-weight: 500;">Total Price: &nbsp;৳ <span id="total-price">554.0</span>
             </p>
             <button id="proceed" class="btn"
-                style="margin-left: 250px; width: 300px; height: 40px; background-color: rgb(192, 20, 100); color: white;">Proceed</button>
+                style="margin-left: 200px; width: 300px; height: 40px; background-color: rgb(192, 20, 100); color: white;">Proceed</button>
         </div>
     </div>
 
@@ -157,9 +161,28 @@
                 </div>
                 <div id="confirm-login">
                     <p class="text-primary">You have successfully Logged in!</p>
+                    <div>
+                        <h1>Order Summary</h1>
+                        <p style="font-size: 21px;">Items Ordered: &nbsp; <span id="item-no">1</span></p>
+                        <p style="font-size: 20px;">Product Price: &nbsp;৳ &nbsp;<span id="product-price">490.00</span>
+                        </p>
+                        <p style="font-size: 19px;">Shipping Cost: &nbsp;৳ &nbsp;<span id="shipping-cost">9.00</span>
+                        </p>
+                        <p style="font-size: 19px;">Tax+Vat: &nbsp;৳ &nbsp;<span id="tax-vat">55.0</span></p>
+                        <p style="font-size: 30px; font-weight: 500;">Total Price: &nbsp;৳ <span
+                                id="total-price">554.0</span>
+                        </p>
+                    </div>
+                    <a href=""><button id="order-confirm-msg" style="background-color: rgb(189, 40, 102);" class="btn"
+                            type="submit">
+                            Confirm Order -></button></a>
+                </div>
+                <div id="confirm-msg"
+                    style="margin: 250px; font-size: 40px; font-family: arial; color: rgb(192, 20, 100);">
+                    <p>Order Confirmed!</p>
                     <a href="index.html"><button style="background-color: rgb(189, 40, 102);" class="btn" type="submit">
                             Visit Our
-                            Homepage to Buy -></button></a>
+                            Homepage to Buy more! -></button></a>
                 </div>
                 <!-- </form> -->
             </div>
